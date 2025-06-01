@@ -46,10 +46,10 @@
       dest: /etc/systemd/system/catalogue.service
 
   - name: systemctl deamon reload
-    ansible.builtin.systemd:
-      daemon_reload: yes 
+    ansible.builtin.systemd_service:
+      daemon_reload: true 
 
-  - name: start nad enable catalogue
+  - name: start and enable catalogue
     ansible.builtin.service:
       name: catalogue
       service: started
