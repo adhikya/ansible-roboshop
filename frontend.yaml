@@ -1,4 +1,4 @@
-- name: front end configuration
+- name: frontend configuration
   hosts: frontend
   become: yes
   tasks:
