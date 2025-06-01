@@ -11,13 +11,13 @@
     - name: install nginx 
       ansible.builtin.dnf:
          name: install nginx
-          state: present  
+         state: present  
 
     - name: enabled & start nginx
       ansible.builtin.service:
          name: start nginx
-          state: started
-          enabled: yes
+         state: started
+         enabled: yes
     
     - name: remove default nginx content
       ansible.builtin.file:
